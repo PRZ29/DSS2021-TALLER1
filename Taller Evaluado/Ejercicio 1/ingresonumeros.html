@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Datos</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Andika" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+</head>
+
+<body>
+    <section>
+        <article>
+            <form name="frmedades" action="resultado.php" method="POST">
+                <fieldset>
+                    <legend><span>Ingreso de Valores:</span></legend>
+                    <ul>
+                        <li>
+                            <label for="valores">Ingresar Valores:</label>
+                            <div class="campo">
+                                <input type="number" name="numero" id="numero" />
+                                <input type="reset" name="agregar" id="agregar" value="Agregar" /><br />
+                                <span id="numbersOnly">El campo sólo acepta números.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="ingresados">Seleccionar 12 valores:</label>
+                            <div class="campo">
+                                <select name="ingresados[]" id="ingresados" size="6" multiple="multiple"></select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="campo">
+                                <input type="submit" name="enviar" id="enviar" value="Enviar" class="boton" />
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+</body>
+<script src="js/agregar.js"></script>
+
+</html>
